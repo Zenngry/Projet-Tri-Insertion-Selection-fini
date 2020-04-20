@@ -15,11 +15,11 @@ def tri_selection(tab): # Fonction qui a pour nom tri_selection et pour argument
 def activate_selection(tab): #Active la fonction tri selection
     tab = [] #tableau vide
     for i in range(0,5): # Pour i entre 0 et 5
-        a = input("Entre un nombre : ") # Sa renvoi entre un nombre
+        a = input("Entrez vos notes du bac : ") # Sa renvoi entrez vos notes du bac"
         a = int(a) # A est égal a un nombre entier
         tab.append(a) #sa ajoute a la liste les notes qui ont été rentrer par l'utlisateur dans le input
     tri_selection(tab) #sa appelle la fonction du tab
-    print("Le tableau trié est:") # Sa affiche que le tableau est trié
+    print("Vos notes du bac sont maintenant triés:") # Sa affiche que vos notes du bac sont maintenant triés
     for i in range(len(tab)): # # i est égal al la longueur du tableau / pour i de 0 à 5 (la longueur du tableau)
         print ("%d" %tab[i])
 
@@ -36,10 +36,10 @@ def tri_insertion(tab): #  Fonction qui a pour nom tri_insertion et qui a pour a
 def activate_insertion(tab): #Active la fonction tri insertion
     tab = [] # Tableau vide
     for i in range(0,5): # Pour i entre 0 et 5
-        a = input("Entre un nombre : ") # Sa affiche Entre un nombre
+        a = input("Entrez vos notes du bac : ") # Sa affiche "Entrez vos notes du bac"
         a = int(a) # A est égal a un nombre sans virgule
         tab.append(a) # Au tableau est ajouter a
     tri_insertion(tab) # Sa rappelle la fonction tri par insertion
-    print ("Le tableau trié est:") # Sa affiche que le tableau est trié
+    print ("Vos notes du bac sont maintenant triés") # Sa affiche que les notes sont triés
     for i in range(len(tab)): # i est égal al la longueur du tableau / pour i de 0 à 5 (la longueur du tableau)
         print ("% d" % tab[i])
